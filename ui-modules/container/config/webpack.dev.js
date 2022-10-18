@@ -12,9 +12,9 @@ const devConfig = {
     },
     plugins: [
         new ModuleFederationPlugin ({
-            name: 'ui_mfe_container',
+            name: 'container',
             remotes: {
-                marketing: 'ui-mfe-marketing@http://localhost:8081/remoteEntry.js'
+                marketing: 'marketing@http://localhost:8081/remoteEntry.js'
             },
             shared: ['react', 'react-dom']
         }),

@@ -13,7 +13,7 @@ const prodConfig = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'ui_mfe_marketing',
+            name: 'marketing',
             filename: 'remoteEntry.js',
             exposes: {
                 './MarketingApp': './src/bootstrap'

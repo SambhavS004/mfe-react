@@ -13,9 +13,9 @@ const prodConfig = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'ui_mfe_container',
+            name: 'container',
             remotes: {
-                marketing: `ui-mfe-marketing@${domain}/marketing/latest/remoteEntry.js`
+                marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`
             },
             shared: packageJson.dependencies,
         })
