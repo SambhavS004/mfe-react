@@ -6,11 +6,11 @@ on:
       - master
       - main
     paths:
-      - 'container/**'
+      - 'ui-modules/container/**'
 
 defaults:
   run:
-    working-directory: container
+    working-directory: ui-modules/container
 
 jobs:
   build:
